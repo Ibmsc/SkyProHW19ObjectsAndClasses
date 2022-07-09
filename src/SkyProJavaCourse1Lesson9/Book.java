@@ -2,20 +2,24 @@ package SkyProJavaCourse1Lesson9;
 
 public class Book {
      String bookName;
-     String autor;
+     Author autor;
      int yearOfPublication;
 
-    public Book(String bookName, String Autor, int yearOfPublication) {
+    public  Book(String bookName, Author autor, int yearOfPublication) {
+
         this.bookName = bookName;
-        this.autor = Autor;
+        this.autor = autor;
         this.yearOfPublication = yearOfPublication;
     }
+    Author authorTolstoy = Author.createAutor(" Лев " ," Толстой");
+    Author authorPyshkin = Author.createAutor("Александр", "Пушкин");
+
     public String getBookName(){
         return this.bookName;
     }
+    public Author AuthorTolstoy(){
+        return  this.AuthorTolstoy();
 
-    public String getAutor(){
-        return this.autor;
     }
     public int getYearOfPublication(){
         return this.yearOfPublication;

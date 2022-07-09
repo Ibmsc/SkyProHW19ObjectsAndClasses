@@ -1,7 +1,7 @@
 package SkyProJavaCourse1Lesson9;
 
 public class Author {
-    Author author = Author.createAutor(" Лев " ," Толстой");
+
     private String firstNameAutor;
     private String surnameAutor;
 
@@ -11,12 +11,7 @@ public class Author {
         author.surnameAutor = surnameAutor;
         return author;
     }
-
-        public String getFirstNameAutor() {
-        return this.firstNameAutor;
+    public String toString(){
+        return "" + this.firstNameAutor + "" + this.surnameAutor;
     }
-    public String getSurnameAutor() {
-                return this.surnameAutor;
-            }
-
 }

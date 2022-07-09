@@ -3,20 +3,22 @@ package SkyProJavaCourse1Lesson9;
 public class HWLesson9 {
     public static void main(String[] args) {
 
-        Book book = new Book(" Война и Мир ", " Л. Толстой ", 2015);
-        System.out.println(" Название книги : " + book.bookName + "; ");
-        System.out.println(" Автор книги : " + book.autor + "; ");
-        System.out.println(" Год публикации : " + book.yearOfPublication + "; ");
+        Book warAndPeaceTolstoy = new Book(" Война и Мир ",
+                Author.createAutor("Лев","Толстой "),2015);
+        System.out.println(" Название книги : " + warAndPeaceTolstoy.bookName + "; ");
+        System.out.println(" Автор книги : "  + Author.createAutor("Лев ","Толстой ") + "; ");
+        System.out.println(" Год публикации : " + warAndPeaceTolstoy.yearOfPublication + "; ");
 
         System.out.println();
 
-        Book book1 = new Book("Сказки ","А. Пушкин", 2011);
-        System.out.println(" Название книги : " + book1.bookName + "; ");
-        System.out.println(" Автор книги : " + book1.autor + "; ");
-        System.out.println(" Год публикации : " + book1.yearOfPublication + "; ");
+       Book skazkiPyshkin = new Book("Сказки ",
+                    Author.createAutor("Александр " , "Пушкин"), 2011);
+        System.out.println(" Название книги : " + skazkiPyshkin.bookName + "; ");
+        System.out.println(" Автор книги : " + skazkiPyshkin.autor + "; ");
+        System.out.println(" Год публикации : " + skazkiPyshkin.yearOfPublication + "; ");
 
-        book1.setYearOfPublication(2015);
-        System.out.println(" Исправление даты публикации : " + book1.getYearOfPublication());
+        skazkiPyshkin.setYearOfPublication(2015);
+        System.out.println(" Исправление даты публикации : " + skazkiPyshkin.getYearOfPublication());
 
     }
 
