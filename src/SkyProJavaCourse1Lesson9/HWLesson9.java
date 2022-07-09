@@ -3,7 +3,7 @@ package SkyProJavaCourse1Lesson9;
 public class HWLesson9 {
     public static void main(String[] args) {
 
-        Book warAndPeaceTolstoy = new Book(" Война и Мир ",
+       Book warAndPeaceTolstoy = new Book(" Война и Мир ",
                 Author.createAutor("Лев","Толстой "),2015);
         System.out.println(" Название книги : " + warAndPeaceTolstoy.bookName + "; ");
         System.out.println(" Автор книги : "  + Author.createAutor("Лев ","Толстой ") + "; ");

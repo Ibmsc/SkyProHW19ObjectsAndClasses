@@ -5,7 +5,7 @@ public class Book {
      Author autor;
      int yearOfPublication;
 
-    public  Book(String bookName, Author autor, int yearOfPublication) {
+    public Book (String bookName, Author autor, int yearOfPublication) {
 
         this.bookName = bookName;
         this.autor = autor;
@@ -27,5 +27,8 @@ public class Book {
     public void setYearOfPublication(int yearOfPublication) {
         this.yearOfPublication = yearOfPublication;
     }
-
+    public String toString(){
+        return "Книга : " + this.bookName+ "; " + "Автор : " + this.autor + "; "
+                + "Год издания : " + this.yearOfPublication + ".";
+    }
 }
